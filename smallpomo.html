@@ -1,0 +1,95 @@
+<!DOCTYPE HTML> 
+<html>  
+
+  <head>  
+    
+   <meta name="viewport" content="width=device-width,initial-scale=1"> 
+
+   <link rel="stylesheet" href="pomodoroNew.css">  
+
+
+  </head> 
+
+
+  <body id="red" onload="whenLoads()">  
+
+    <div class="container">  
+     <!---<img id="headerImage" src= "Vector 1 (2).png">--->
+   
+     <h1>FOCUS.</h1> 
+     <h3>time management. simplified.</h3>  
+
+     <div id="timeDiv"> 
+
+
+
+        <br/><br/><input type="text" placeholder="Enter an activity.." id="sessionActivity"> 
+
+       
+    </div> 
+
+
+  <div id='sessionNBreakDiv'>
+
+
+    <div id='sessionDiv'>
+
+      <h2 id="title1">Session Time:</h2>  
+
+
+       <!---THIS WAS HIS CODE BUT I DID MY OWN THANG-- <h2 id="timeType"></h2>---- This was messing up the alignment of my buttons so I just made it display: none below, but when we press start it will be revealed by me selecting it & making it style.display ="inline-block"--->
+ 
+
+      <h2 id="timeType"></h2> <!---edit: i did this instead, & once i moved this timeType h2 so it wasn't coming between the minus & plus btns, it aligned properly !--->
+
+       <a href="#" class="btn btn-primary" id="minus5Clock">-</a>  
+
+     
+
+       <h3 id ="num">10</h2> 
+
+       <a href="#" class="btn btn-primary" id="add5Clock">+</a> 
+
+       <a href="#" class="btn btn-primary" id="reset">Reset</a>  
+
+       <p id="minutes"></p>
+
+
+    </div>
+
+    <div id="breakDiv">
+
+      <h2 id="title2">Break Time:</h2> 
+
+       <a href="#" class="btn btn-primary" id="minus5Break">-</a> 
+
+       <h3 id ="breakNum">5</h2> 
+
+       <a href="#" class="btn btn-primary" id="add5Break">+</a>
+
+
+        </div>
+   
+    </div>
+
+      <br/><br/> 
+
+
+    <a href="#" class="btn btn-primary" id="start">Start</a> 
+
+
+      <div id="taskListContainer">  
+
+        <p class="completedList">Your Completed Focus Sessions:</p>
+        <ul id="taskList">
+          
+
+
+       </ul>
+      </div>
+    </div> 
+
+  <script src="correct pomodoro js dylans.js"></script>
+  </body>
+
+</html>
